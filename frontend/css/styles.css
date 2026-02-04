@@ -1,20 +1,8 @@
 body{
-    
+    background-color: black;
 }
-.h1, .h2{
-    font-size: 20px;
-    background: radial-gradient(circle, #0aeeff ,#0043ff);
+h1, h2{
+    background: radial-gradient(#0aeeff ,#0043ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.bg{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-}
-.overlay{
-    content: "";
-    position: absolute;
-    background-color: black;   
-} 
