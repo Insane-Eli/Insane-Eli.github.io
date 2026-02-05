@@ -18,8 +18,8 @@ bro my tabs keep going 4 instead of 2 even tho i told vsc to stop being a bad bo
 * {
 letter-spacing: 1px;
 font-size: large;
-  font-family: "GintoNordUltra", sans-serif;
-  text-transform: uppercase;
+  font-family: "Michroma", sans-serif;
+  /* text-transform: uppercase; */
   text-shadow:
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
