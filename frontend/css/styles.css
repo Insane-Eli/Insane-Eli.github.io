@@ -1,8 +1,134 @@
-body{
-    background-color: black;
+/*
+https://font.download/font/abc-ginto-nord-unlicensed-trial
+
+
+bro my tabs keep going 4 instead of 2 even tho i told vsc to stop being a bad boy and im honestly so over it atp
+    dumbass option
+        doesnt even work
+
+*/
+
+@font-face {
+  font-family: "GintoNordUltra";
+  src: url("/frontend/assets/fonts/GintoNordUltra.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}    
+
+* {
+letter-spacing: 1px;
+font-size: large;
+  font-family: "GintoNordUltra", sans-serif;
+  text-transform: uppercase;
+  text-shadow:
+    0px 0px 20px var(--outerbloom),
+    0px 0px 5px var(--innerbloom);
 }
-h1, h2{
-    background: radial-gradient(#0aeeff ,#0043ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+.social-icons img{
+    width: 20px;
+    color:#0aeeff;
+}
+
+.michroma-regular {
+font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --c1: #0aeeff;
+  --c2: #0043ff;
+  --outerbloom: rgba(38, 0, 255, 0.8);
+  --innerbloom: rgb(0, 30, 255, 0.9);
+}
+
+body {
+  background-color: #000001;
+  background-image: url("/frontend/assets/misc/circlespink.gif");
+  background-repeat: no-repeat;
+  background-position: right;
+  color: var(--c2);
+}
+.bg{
+
+}
+.scanlines {
+  /* lowkey broken but whatevs */
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 8px
+  );
+  pointer-events: none;
+  z-index: 1001;
+  animation: scanline-pan 0.5s steps(2) infinite;
+}
+@keyframes scanline-pan {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 0 2px;
+  }
+  50% {
+    background-position: 0 4px;
+  }
+  75% {
+    background-position: 0 6px;
+  }
+  100% {
+    background-position: 0 8px;
+  }
+}
+.noise {
+  position: fixed;
+  inset: 0;
+  background: url("/frontend/assets/misc/noise.png");
+  opacity: 0.05;
+  zoom: 300%;
+  pointer-events: none;
+  z-index: 1002;
+  animation: shutter 0.15s steps(20) infinite;
+}
+@keyframes shutter {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100px 0px;
+  }
+  50% {
+    background-position: 100px 100px;
+  }
+  75% {
+    background-position: 0px 100px;
+  }
+  100% {
+    background-position: 0px 50px;
+  }
+}
+.vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1003;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+.blue-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1004;
+  background: #0aeeff;
+  mix-blend-mode: screen;
+  opacity: 0.1;
 }
