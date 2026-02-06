@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   background: url("/frontend/assets/misc/noise.png");
-  opacity: 0.05;
+  opacity: 0.06;
   zoom: 150%;
   pointer-events: none;
   z-index: 1002;
