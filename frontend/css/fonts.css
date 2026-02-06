@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "GintoNordUltra";
+  src: url("/frontend/assets/fonts/GintoNordUltra.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}    
+
+
+.michroma-regular {
+font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
