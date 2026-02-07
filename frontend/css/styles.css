@@ -13,30 +13,68 @@ https://font.download/font/abc-ginto-nord-unlicensed-trial
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
 }
+.social-icons img {
+  width: 20px;
+  height: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+}
+
+header{
+  margin: 8;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(var(--c1));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  text-decoration: none;
+
+}
+
+#logo{
+  width: 120px;
+  height: auto;
+  rotate: 1deg;
+  display: block;
+  margin: 0; 
+  margin-left: 5px;
+}
+
 
 :root {
-  --text-color: 0, 67, 255;
+  --text-color: 0, 0, 255;
+  --c1: 151, 174, 235; /* main color*/
+  --c2: 136, 163, 242;
+  --c3: 93, 124, 186;
+  --c4: 60, 107, 217;
+  --c5: 60, 98, 180;
+  --c6: 184, 207, 252;
+
   --outerbloom: rgba(var(--text-color), 0.8);
   --innerbloom: rgba(var(--text-color), 0.9);
   --shade: 60;
   --scanline-space: 7px;
 }
 
-.social-icons img{
-    width: 20px;
-    color:#0aeeff;
-}
-
-
 body {
   background-color: #000001;
   background-image: url("/frontend/assets/misc/circlespink.gif");
   background-repeat: no-repeat;
   background-position: right;
+  margin: 0;
 }
 
 h1{
-  --text-color: 255, 255, 00;
+  --text-color: var(--c1);
   --outerbloom: rgba(var(--text-color), 0.8);
   --innerbloom: rgba(var(--text-color), 0.9);
   color: rgb(var(--text-color));
@@ -44,21 +82,11 @@ h1{
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
 }
-.ageCount{
-  --text-color: 100, 200, 253; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
-}
-#age{
-  --text-color: 255, 100, 200; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
-}
-#ageDecimal{
-  --text-color: calc(255 - var(--shade)),
-                calc(100 - var(--shade)), 
-                calc(200 - var(--shade));
-  --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
-  font-size: 60%;
-}
+
 h2{
-  --text-color: 255, 100, 00; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
+  --text-color: var(--c1);
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
   color: rgb(var(--text-color));
   text-shadow:
     0px 0px 20px var(--outerbloom),
@@ -66,29 +94,68 @@ h2{
 }
 
 h3{
-  --text-color: 5, 255, 200; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
+  --text-color: var(--c2);
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
+  color: rgb(var(--text-color));
   text-shadow:
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
 }
 
 h4{
-  --text-color: 280, 67, 123; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
+  --text-color: var(--c3);
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
+  color: rgb(var(--text-color));
   text-shadow:
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
 }
 
 h5{
-  --text-color: 255, 50, 255; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
+  --text-color: var(--c4);
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
+  color: rgb(var(--text-color));
   text-shadow:
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
 }
 
 h6{
-  --text-color: 05, 255, 80; --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
+  --text-color: var(--c5); 
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
+  color: rgb(var(--text-color));
   text-shadow:
     0px 0px 20px var(--outerbloom),
     0px 0px 5px var(--innerbloom);
 }
+
+.social-icons img{
+    width: 20px;
+    color:#0aeeff;
+}
+
+/* .ageCount{
+  --text-color: 100, 200, 253; 
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
+  color: rgb(var(--text-color));
+}
+
+#age{
+  --text-color: 255, 100, 200; 
+  --outerbloom: rgba(var(--text-color), 0.8); 
+  --innerbloom: rgba(var(--text-color), 0.9); 
+  color: rgb(var(--text-color));
+}
+
+#ageDecimal{
+  --text-color: calc(255 - var(--shade)),
+                calc(100 - var(--shade)), 
+                calc(200 - var(--shade));
+  --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
+  font-size: 60%;
+} */
