@@ -3,11 +3,54 @@
   src: url("/frontend/assets/fonts/GintoNordUltra.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
-}    
+}  
 
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/frontend/assets/fonts/JetBrainsMonoNL-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}   
+
+.nabla-regular {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+.staatliches-regular {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.agdasima-regular {
+  font-family: "Agdasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.agdasima-bold {
+  font-family: "Agdasima", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.libre-barcode-39-extended-regular {
+  font-family: "Libre Barcode 39 Extended", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .michroma-regular {
 font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gothic-a1-regular {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

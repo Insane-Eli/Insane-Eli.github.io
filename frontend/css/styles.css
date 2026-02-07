@@ -4,8 +4,24 @@ https://font.download/font/abc-ginto-nord-unlicensed-trial
 "https://tenor.com/view/sonic-cybercore-gif-1871939647597623161"
 */
 
-@import url('effects.css');
-@import url('fonts.css');
+@import url('/frontend/css/effects.css');
+@import url('/frontend/css/fonts.css');
+
+:root {
+  --text-color: 151, 174, 235;
+  --c1: 151, 174, 235; /* main color*/
+  --c2: 136, 163, 242;
+  --c3: 93, 124, 186;
+  --c4: 60, 107, 217;
+  --c5: 60, 98, 180;
+  --c6: 184, 207, 252;
+
+  --outerbloom: rgba(var(--text-color), 0.8);
+  --innerbloom: rgba(var(--text-color), 0.9);
+  --shade: 60;
+  --scanline-space: 7px;
+}
+
 
 * {
   letter-spacing: 1px;
@@ -43,6 +59,8 @@ https://font.download/font/abc-ginto-nord-unlicensed-trial
 }
 
 .nav-buttons a {
+  font-family: 'JetBrains Mono', sans-serif;
+  letter-spacing: 1;
   text-decoration: none;
   --text-color: var(--c1);
   --outerbloom: rgba(var(--text-color), 0.8);
@@ -63,7 +81,7 @@ header{
 }
 
 #logo{
-  width: 300px;
+  width: 200px;
   height: auto;
   rotate: 1deg;
   display: block;
@@ -72,28 +90,55 @@ header{
   margin-bottom: 2px;
 }
 
-
-:root {
-  --text-color: 0, 0, 255;
-  --c1: 151, 174, 235; /* main color*/
-  --c2: 136, 163, 242;
-  --c3: 93, 124, 186;
-  --c4: 60, 107, 217;
-  --c5: 60, 98, 180;
-  --c6: 184, 207, 252;
-
-  --outerbloom: rgba(var(--text-color), 0.8);
-  --innerbloom: rgba(var(--text-color), 0.9);
-  --shade: 60;
-  --scanline-space: 7px;
-}
-
 body {
   background-color: #000001;
-  background-image: url("/frontend/assets/misc/circlespink.gif");
+  /* background-image: url("/frontend/assets/misc/circlespink.gif");*/
   background-repeat: no-repeat;
   background-position: right;
-  margin: 0;
+}
+
+#todoContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  border-radius: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.button-on-white{
+  background-color: black;
+
+}
+
+#taskInput {
+  width: 50%;
+  padding: 10px;
+  background-color: black;
+  border: 1px solid rgb(var(--c1));
+  color: var(--text-color);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#todoList {
+  list-style: square;
+  color: #000000;
+  padding: 0; 
+}
+
+#todoList li {
+  padding: 10px;
+  border: 1px solid rgb(var(--c1));
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+#todoList li:hover {
+  background: #111111;
 }
 
 h1{
