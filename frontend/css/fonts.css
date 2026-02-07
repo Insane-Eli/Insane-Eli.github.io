@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "GintoNordUltra";
+  font-family: "Ginto Nord Ultra";
   src: url("/frontend/assets/fonts/GintoNordUltra.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
@@ -8,6 +8,13 @@
 
 .michroma-regular {
 font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zalando-sans-expanded-body {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
