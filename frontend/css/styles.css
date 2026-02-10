@@ -89,7 +89,6 @@ header{
 
 .ticker-text {
   display: flex;
-  min-width: 200%;
   white-space: nowrap;
   animation: ticker-scroll 10s linear infinite;
 }
@@ -99,7 +98,7 @@ header{
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-25%);
+    transform: translateX(-100%);
   }
 }
 
