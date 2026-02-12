@@ -18,7 +18,7 @@ https://font.download/font/abc-ginto-nord-unlicensed-trial
 
   --outerbloom: rgba(var(--text-color), 0.8);
   --innerbloom: rgba(var(--text-color), 0.9);
-  --shade: 60;
+  --shade: 20;
   --scanline-space: 7px;
 }
 
@@ -79,11 +79,13 @@ header{
   text-decoration: none;
 
 }
+
 #ascii{
   font-family: monospace;
-  font-size: 10px;
+  font-size: 7px;
   letter-spacing: 0px;
 }
+
 .ticker {
   width: max-content;
   overflow: hidden;
@@ -168,7 +170,7 @@ body {
   border-radius: 4px;
   margin-bottom: 10px;
   background: #000000;
-  transition: background 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -254,11 +256,12 @@ h6{
   --innerbloom: rgba(var(--text-color), 0.9); 
   color: rgb(var(--text-color));
 }
+  */
 
 #ageDecimal{
-  --text-color: calc(255 - var(--shade)),
-                calc(100 - var(--shade)), 
-                calc(200 - var(--shade));
+  --text-color: calc(151 - var(--shade)),
+                calc(174 - var(--shade)), 
+                calc(235 - var(--shade));
   --outerbloom: rgba(var(--text-color), 0.8); --innerbloom: rgba(var(--text-color), 0.9); color: rgb(var(--text-color));
   font-size: 60%;
-} */
+}

@@ -1,4 +1,7 @@
-// shoutout aiden 4tha code :fire:
+// credits to Aiden Rouhani for the getSong() function
+// https://aidenrouhani.com/
+// https://github.com/aidenrouhani
+
 
 function getSong() {
   fetch(
