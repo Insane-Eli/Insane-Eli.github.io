@@ -11,7 +11,6 @@
 <body>
     <div id="header"></div>
     <h1>About Me</h1>
-    <script src="api.js"></script>
 
     <h2>
 	<div class="ageCount">
@@ -24,8 +23,15 @@
     class="font-normal text-xl mt-8 ml-4 mr-4 md:mr-0 md:ml-0 md:text-xl text-center md:text-left italic text-gray-400 link link-underline link-underline-black"
     target="_blank">
     </a>
-
-
+    <pre id="ascii"></pre>
+    <script>
+        fetch('/frontend/assets/misc/eli.txt')
+        .then(res => res.text())
+        .then(text => {
+            document.getElementById('ascii').textContent = text;
+        });
+    </script>
+    
     <script src="/frontend/js/main.js"></script>
     <script src="/frontend/js/api.js"></script>
 </body>

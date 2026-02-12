@@ -79,7 +79,11 @@ header{
   text-decoration: none;
 
 }
-
+#ascii{
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0px;
+}
 .ticker {
   width: max-content;
   overflow: hidden;
