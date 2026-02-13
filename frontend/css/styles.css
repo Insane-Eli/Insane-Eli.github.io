@@ -22,6 +22,29 @@ https://font.download/font/abc-ginto-nord-unlicensed-trial
   --scanline-space: 7px;
 }
 
+body {
+
+  background-color: #000001;
+  /* background-image: url("/frontend/assets/misc/circlespink.gif");*/
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.page-content{
+    display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+}
+
+#about-me-all{
+  width: 1400px;
+  height: 720px;
+  margin: 0 auto;
+  margin-bottom: 100%;
+  scroll-behavior: none;
+  border: 2px solid rgb(var(--c1))
+}
+
 
 * {
   letter-spacing: 1px;
@@ -127,12 +150,6 @@ header{
   margin-bottom: 2px;
 }
 
-body {
-  background-color: #000001;
-  /* background-image: url("/frontend/assets/misc/circlespink.gif");*/
-  background-repeat: no-repeat;
-  background-position: right;
-}
 
 #todoContainer {
   max-width: 400px;
