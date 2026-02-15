@@ -12,8 +12,8 @@ function getSong() {
       var str = JSON.stringify(data).replace(/\@/g, "");
       var newData = JSON.parse(str);
       var nowPlaying = newData.recenttracks.track[0].attr
-        ? "🎵 currently listening to"
-        : "🎵 i was listening to";
+        ? "currently listening to:"
+        : "I was listening to";
       var artist = Object.values(data.recenttracks.track[0].artist)[1];
       var timeStatus = "";
       if (!newData.recenttracks.track[0].attr) {

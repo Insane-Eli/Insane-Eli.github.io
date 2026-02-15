@@ -11,7 +11,7 @@
 <body>
     <div id="header"></div>
     <div class='page-content'>
-    <!--
+    
     <h1>About Me</h1>
 
     <h2>
@@ -24,10 +24,20 @@
     <a id="listening"
     class="font-normal text-xl mt-8 ml-4 mr-4 md:mr-0 md:ml-0 md:text-xl text-center md:text-left italic text-gray-400 link link-underline link-underline-black"
     target="_blank">
-    </a> -->
-    <div id="about-me-all">
-        <pre id="ascii"></pre>
-    </div>
+    </a>
+    hello hello hello
+    <!-- <div id="about-me-all">
+        <div id="eli-picture">
+            <pre id="ascii"></pre>
+        </div>
+    </div> -->
+    <style>
+        html, body {
+          overflow: hidden;
+          height: 100%;
+        }
+      </style>
+      
     <script>
         fetch('/frontend/assets/misc/eli.txt')
         .then(res => res.text())
