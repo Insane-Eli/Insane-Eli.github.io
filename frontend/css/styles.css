@@ -31,9 +31,10 @@ body {
 }
 
 .page-content{
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center; /* vertical center */
+  margin: .5vw;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 #about-me-all{
@@ -64,9 +65,9 @@ body {
 }
 
 .nav-buttons {
-  width: 120%;
+  width: auto;
   height: auto;
-  font-size: 30px;
+  font-size: 20px;
   --text-color: var(--c1);
   --outerbloom: rgba(var(--text-color), 0.8);
   --innerbloom: rgba(var(--text-color), 0.9);
@@ -74,6 +75,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: auto;
 }
 
 .nav-buttons a:hover{
@@ -103,7 +105,7 @@ header{
   justify-content: space-between;
   padding: 10px;
   text-decoration: none;
-
+  position: relative;
 }
 
 #eli-picture{
